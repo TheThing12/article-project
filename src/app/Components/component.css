@@ -1,0 +1,29 @@
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-left: 50px;
+    font-family: Arial;
+
+}
+.button{
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 25px;
+    height: 100px;
+    width: 200px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 100px;
+    margin-top: 50px;
+    cursor: pointer;
+    
+  }
+  .button:hover{
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s;
+  }

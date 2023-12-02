@@ -1,0 +1,68 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.landingpage{
+  height: 700px;
+  object-fit: cover;
+  background-color: 219, 209, 198;
+  object-position: center;
+}
+.divContainer{
+  width: auto;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.paragraph{
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  font-family: Arial;
+}
+.button{
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 25px;
+  height: 100px;
+  width: 200px;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 100px;
+  margin-top: 50px;
+  cursor: pointer;
+  
+}
+.button:hover{
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s;
+}
+.sociallinks{
+  height: 120px;
+  background-color: 68, 176, 158;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footerContainer{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  
+  
+}
+.footer{
+  background-color: 68, 176, 158;
+}

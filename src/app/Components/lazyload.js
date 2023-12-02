@@ -5,16 +5,21 @@ import { useState } from "react";
 import dynamic from "next/dynamic";
 
 // Client Components:
-const ComponentB = dynamic(() => import("./card"));
+const ComponentC = dynamic(() => import("./card"), {
+  ssr: false,
+  loading: () => <p className="p-loading">Loading....</p>,
+});
 export default function ClientComponentExample() {
   const [showMore, setShowMore] = useState(false);
 
   return (
     <>
-      {showMore && <ActionAreaCard />}
-      <button className="button" onClick={() => setShowMore(!showMore)}>
-        Hello
-      </button>
+      <div className="div-lazyload">
+        <button className="button" onClick={() => setShowMore(!showMore)}>
+          Hello
+        </button>
+      </div>
+      {showMore && <ComponentC />}
     </>
   );
 }

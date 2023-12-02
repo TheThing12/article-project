@@ -4,18 +4,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
 }
 
-.landingpage{
-  height: 700px;
-  object-fit: cover;
-  background-color: 219, 209, 198;
-  object-position: center;
-}
+
 .divContainer{
-  width: auto;
-  height: 600px;
+  margin-top: 100px;
+  margin-bottom: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +32,6 @@
   background-color: black;
   border: none;
   border-radius: 100px;
-  margin-top: 50px;
   cursor: pointer;
   
 }
@@ -65,4 +58,10 @@
 }
 .footer{
   background-color: 68, 176, 158;
+}
+.divMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

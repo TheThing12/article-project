@@ -20,10 +20,19 @@
     border-radius: 100px;
     margin-top: 50px;
     cursor: pointer;
+    align-items: center;
     
   }
   .button:hover{
     background-color: white;
     color: black;
     transition: background-color 0.3s;
+  }
+  .div-lazyload{
+    margin-bottom: 10px;
+  }
+  .p-loading{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
   }

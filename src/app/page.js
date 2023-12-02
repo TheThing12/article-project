@@ -8,24 +8,23 @@ import {
   faTwitter,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import ActionAreaCard from "./Components/test-component";
+import ClientComponentExample from "./Components/lazyload";
 
 export default function Home() {
   return (
     <>
       <section className="section-container">
-        <div className={style.landingpage}>
-          <ResponsiveAppBar />
-          <div className={style.divContainer}>
-            <div>
-              <p className={style.paragraph}>Welcome To My Blog</p>
-            </div>
-            <div></div>
-          </div>
-        </div>
+        <ResponsiveAppBar />
       </section>
       <main>
-        <ActionAreaCard />
+        <div className={style.divContainer}>
+          <div>
+            <p className={style.paragraph}>Welcome To My Blog</p>
+          </div>
+          <div className={style.divMain}>
+            <ClientComponentExample />
+          </div>
+        </div>
       </main>
       <footer className={style.footer}>
         <div className={style.footerContainer}>

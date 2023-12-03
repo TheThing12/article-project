@@ -28,7 +28,7 @@ export default function ActionAreaCard() {
           const linkHref = data.attributes.link;
           const imageUrl = data.attributes.image.data.attributes.url;
           return (
-            <a href={`${linkHref}`}>
+            <a key={card} href={`${linkHref}`}>
               <div className="card-flex">
                 <Card sx={{ maxWidth: 345 }}>
                   <CardActionArea>

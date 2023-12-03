@@ -24,7 +24,7 @@ export default function ActionAreaCard() {
   return (
     <div className="card-container">
       {article &&
-        article.map((data, i) => {
+        article.map((data) => {
           const linkHref = data.attributes.link;
           const imageUrl = data.attributes.image.data.attributes.url;
           return (

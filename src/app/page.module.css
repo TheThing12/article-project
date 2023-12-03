@@ -8,8 +8,9 @@
 
 
 .divContainer{
+  height: auto;
   margin-top: 100px;
-  margin-bottom: 110px;
+  margin-bottom: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;

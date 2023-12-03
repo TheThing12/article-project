@@ -12,7 +12,7 @@ import ClientComponentExample from "./Components/lazyload";
 
 export default function Home() {
   return (
-    <>
+    <div className={style.firstContainer}>
       <section className="section-container">
         <ResponsiveAppBar />
       </section>
@@ -47,6 +47,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 }

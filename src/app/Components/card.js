@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import "./component.css";
 import axios from "axios";
+import Link from "next/link";
 
 export default function ActionAreaCard() {
   const [article, setArticle] = useState("");
@@ -25,10 +26,11 @@ export default function ActionAreaCard() {
     <div className="card-container">
       {article &&
         article.map((data) => {
-          const linkHref = data.attributes.link;
+          const id = data.id
           const imageUrl = data.attributes.image.data.attributes.url;
           return (
-            <a key={card} href={`${linkHref}`}>
+            <div key={id}>
+              <Link href={`/article/${id}`}>
               <div className="card-flex">
                 <Card sx={{ maxWidth: 345 }}>
                   <CardActionArea>
@@ -49,7 +51,8 @@ export default function ActionAreaCard() {
                   </CardActionArea>
                 </Card>
               </div>
-            </a>
+              </Link>
+            </div>
           );
         })}
     </div>

@@ -18,7 +18,7 @@ export default function Article() {
   useEffect(() => {
     async function fetchArticle() {
       try {
-        const getUrl = "http://localhost:1337/api/articles"; // Removed `populate` query parameter
+        const getUrl = `http://localhost:1337/api/articles`; // Removed `populate` query parameter
         const response = await axios.get(getUrl);
         const result = response.data.data;
         console.log(getUrl);

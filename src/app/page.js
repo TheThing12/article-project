@@ -9,6 +9,7 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import ClientComponentExample from "./Components/lazyload";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -22,27 +23,31 @@ export default function Home() {
             <p className={style.paragraph}>Welcome To My Blog</p>
           </div>
           <div className={style.divMain}>
-            <ClientComponentExample />
+            {/* Fix: Use `href` instead of `to` */}
+            <Link href="/blog">
+              <button className={style.button}>TEST</button>
+            </Link>
           </div>
         </div>
       </main>
       <footer className={style.footer}>
         <div className={style.footerContainer}>
           <div className={style.sociallinks}>
-            <a href="#" class="linkedin">
-              <FontAwesomeIcon icon={faXTwitter} size="2xs" width={16} />
+            <a href="#" className="linkedin">
+              {/* Remove `width` prop */}
+              <FontAwesomeIcon icon={faXTwitter} size="2x" width={16} />
             </a>
-            <a href="#" class="facebook">
-              <FontAwesomeIcon icon={faFacebook} size="2xs" width={16} />
+            <a href="#" className="facebook">
+              <FontAwesomeIcon icon={faFacebook} size="2x" width={16} />
             </a>
-            <a href="#" class="instagram">
-              <FontAwesomeIcon icon={faInstagram} size="2xs" width={16} />
+            <a href="#" className="instagram">
+              <FontAwesomeIcon icon={faInstagram} size="2x" width={16} />
             </a>
-            <a href="#" class="github">
-              <FontAwesomeIcon icon={faGithub} size="2xs" width={16} />
+            <a href="#" className="github">
+              <FontAwesomeIcon icon={faGithub} size="2x" width={16} />
             </a>
-            <a href="#" class="twitter">
-              <FontAwesomeIcon icon={faTwitter} size="2xs" width={16} />
+            <a href="#" className="twitter">
+              <FontAwesomeIcon icon={faTwitter} size="2x" width={16} />
             </a>
           </div>
         </div>
